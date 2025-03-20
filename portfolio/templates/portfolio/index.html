@@ -1,16 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Bruno Henrique</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
 </head>
 <body>
     <div class="container">
         <!-- Foto de Perfil e Título -->
         <header class="header">
-            <img src="img/perfil_bruno.png" alt="Foto de Perfil" class="profile-img">
+            <img src="{% static 'portfolio/img/perfil_bruno.png' %}" alt="Foto de Perfil" class="profile-img">
             <h1>Bruno Henrique</h1>
             <p class="subtitle">Desenvolvedor Web | Gestão de Redes Sociais | Gamer Enthusiast</p>
         </header>
@@ -35,7 +37,7 @@
         <section class="section education">
             <h2>Formação</h2>
             <p><strong>Técnico em Informática</strong> - IFRN-PDF (Conclusão: 2024)</p>
-            <img src="img/diploma.png" alt="Certificado" class="certificate-img">
+            <img src="{% static 'portfolio/img/diploma.png' %}" alt="Certificado" class="certificate-img">
         </section>
 
         <!-- Seção de Experiência -->
@@ -76,8 +78,8 @@
         <section class="section certificates">
             <h2>Certificados</h2>
             <div class="certificates-list">
-                <img src="img/aspnet.png" alt="Certificado ASP.NET" class="certificate-img">
-                <img src="img/csharp.png" alt="Certificado C#" class="certificate-img">
+                <img src="{% static 'portfolio/img/aspnet.png' %}" alt="Certificado ASP.NET" class="certificate-img">
+                <img src="{% static 'portfolio/img/csharp.png' %}" alt="Certificado C#" class="certificate-img">
             </div>
         </section>
     </div>
